@@ -6,7 +6,7 @@ FROM python:3.10-slim
 ENV PYTHONUNBUFFERED True
 
 # Set the HTTPS proxy variable
-#ENV HTTPS_PROXY="https://192.168.10.10:443"
+#ENV HTTPS_PROXY="https://192.168.10.13:3128"
 
 # Copy local code to the container image.
 ENV APP_HOME /app
