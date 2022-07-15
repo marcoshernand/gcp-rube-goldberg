@@ -7,8 +7,6 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST"])
 def main():
-    #name = os.environ.get("NAME", "World")
-    #return "Hello {}!".format(name)
     data = request.json
     o = subprocess.run(
         ["./gcve_script.sh"],
